@@ -334,43 +334,60 @@ ul p {
 }
 
 /* ============ responcive ============== */
-/* TABLET */
-@media (max-width: 992px) {
-  .nav-search {
-    width: 400px;
-  }
-
-  .box {
-    width: 45%;
-  }
-}
-
-/* MOBILE */
 @media (max-width: 768px) {
 
-  /* NAVBAR */
+  /* ===== NAVBAR ===== */
   .navbar {
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: stretch;
     height: auto;
+    padding: 10px;
+    gap: 10px;
   }
 
+  /* Top row (logo + cart) */
+  .nav-logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .logo {
+    width: 90px;
+    height: 40px;
+  }
+
+  .nav-cart {
+    align-self: flex-end;
+  }
+
+  /* Hide unnecessary items */
   .nav-address,
   .nav-sign,
   .nav-returns {
     display: none;
   }
 
+  /* Search full width */
   .nav-search {
     width: 100%;
-    margin-top: 10px;
+    height: 40px;
   }
 
-  /* PANEL */
+  .search-input {
+    font-size: 14px;
+  }
+
+  /* ===== PANEL ===== */
   .panel {
     flex-direction: column;
     align-items: flex-start;
-    height: auto;
     padding: 10px;
+    height: auto;
+  }
+
+  .panel-all {
+    margin-bottom: 5px;
   }
 
   .panel-ops {
@@ -378,38 +395,74 @@ ul p {
   }
 
   .panel-ops p {
-    display: block;
-    margin: 5px 0;
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+    font-size: 13px;
   }
 
-  /* SHOP */
-  .shop-section {
-    flex-direction: column;
-    align-items: center;
+  .panel-deals {
+    font-size: 13px;
+    margin-top: 5px;
   }
 
-  .box {
-    width: 90%;
-  }
-
-  /* HERO */
+  /* ===== HERO ===== */
   .hero-section {
-    height: 200px;
+    height: 180px;
   }
 
   .hero-msg {
-    font-size: 0.7rem;
+    font-size: 12px;
+    padding: 5px;
     text-align: center;
   }
 
-  /* FOOTER */
-  .foot-panel2 {
+  /* ===== PRODUCTS ===== */
+  .shop-section {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    padding: 10px;
+  }
+
+  .box {
+    width: 95%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .box-img {
+    height: 180px;
+  }
+
+  /* ===== FOOTER ===== */
+  .foot-panel1 {
+    font-size: 14px;
+  }
+
+  .foot-panel2 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
   }
 
   .foot-panel2 ul {
+    width: 100%;
     margin-bottom: 20px;
+  }
+
+  .foot-panel2 p {
+    font-size: 14px;
+  }
+
+  .foot-panel2 a {
+    font-size: 13px;
+  }
+
+  .foot-panel3 {
+    padding: 10px;
+  }
+
+  .foot-panel4 {
+    font-size: 12px;
+    padding: 10px;
   }
 }
