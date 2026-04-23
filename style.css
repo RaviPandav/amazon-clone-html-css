@@ -332,3 +332,84 @@ ul p {
   font-size: 12px;
   text-align: center;
 }
+
+/* ============ responcive ============== */
+/* TABLET */
+@media (max-width: 992px) {
+  .nav-search {
+    width: 400px;
+  }
+
+  .box {
+    width: 45%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .nav-address,
+  .nav-sign,
+  .nav-returns {
+    display: none;
+  }
+
+  .nav-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* PANEL */
+  .panel {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .panel-ops {
+    width: 100%;
+  }
+
+  .panel-ops p {
+    display: block;
+    margin: 5px 0;
+  }
+
+  /* SHOP */
+  .shop-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+
+  /* HERO */
+  .hero-section {
+    height: 200px;
+  }
+
+  .hero-msg {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  /* FOOTER */
+  .foot-panel2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .foot-panel2 ul {
+    margin-bottom: 20px;
+  }
+}
