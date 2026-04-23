@@ -336,133 +336,129 @@ ul p {
 /* ============ responcive ============== */
 @media (max-width: 768px) {
 
-  /* ===== NAVBAR ===== */
+  /* REMOVE EXTRA SPACE */
+  body {
+    overflow-x: hidden;
+  }
+
+  /* ===== NAVBAR SIMPLIFIED ===== */
   .navbar {
     flex-direction: column;
     align-items: stretch;
     height: auto;
-    padding: 10px;
-    gap: 10px;
+    padding: 8px;
+    gap: 8px;
   }
 
-  /* Top row (logo + cart) */
+  /* TOP ROW: LOGO + CART */
   .nav-logo {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 
   .logo {
-    width: 90px;
-    height: 40px;
+    width: 85px;
+    height: 35px;
   }
 
   .nav-cart {
-    align-self: flex-end;
+    font-size: 12px;
   }
 
-  /* Hide unnecessary items */
+  /* ❌ REMOVE UNNECESSARY ITEMS */
   .nav-address,
   .nav-sign,
   .nav-returns {
     display: none;
   }
 
-  /* Search full width */
+  /* SEARCH BAR (MOST IMPORTANT) */
   .nav-search {
     width: 100%;
-    height: 40px;
+    height: 38px;
   }
 
   .search-input {
-    font-size: 14px;
+    font-size: 13px;
   }
 
-  /* ===== PANEL ===== */
+  /* ===== PANEL SIMPLIFIED ===== */
   .panel {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px;
+    padding: 8px;
     height: auto;
   }
 
-  .panel-all {
-    margin-bottom: 5px;
-  }
-
-  .panel-ops {
-    width: 100%;
+  /* Only show few options */
+  .panel-ops p:nth-child(n+4) {
+    display: none; /* hide extra menu items */
   }
 
   .panel-ops p {
     display: inline-block;
-    margin: 5px 10px 5px 0;
-    font-size: 13px;
+    font-size: 12px;
+    margin-right: 10px;
   }
 
   .panel-deals {
-    font-size: 13px;
+    font-size: 12px;
     margin-top: 5px;
   }
 
   /* ===== HERO ===== */
   .hero-section {
-    height: 180px;
+    height: 150px;
   }
 
   .hero-msg {
-    font-size: 12px;
+    font-size: 11px;
     padding: 5px;
     text-align: center;
   }
 
-  /* ===== PRODUCTS ===== */
+  /* ===== PRODUCTS (MOST IMPORTANT) ===== */
   .shop-section {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 8px;
   }
 
   .box {
-    width: 95%;
-    margin: 10px 0;
+    width: 100%;
+    margin: 8px 0;
     padding: 10px;
   }
 
+  .box h2 {
+    font-size: 16px;
+  }
+
   .box-img {
-    height: 180px;
+    height: 160px;
   }
 
-  /* ===== FOOTER ===== */
+  /* ===== FOOTER CLEAN ===== */
+
+  /* Back to top visible */
   .foot-panel1 {
-    font-size: 14px;
-  }
-
-  .foot-panel2 {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
-
-  .foot-panel2 ul {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .foot-panel2 p {
-    font-size: 14px;
-  }
-
-  .foot-panel2 a {
     font-size: 13px;
   }
 
+  /* ❌ REMOVE HEAVY FOOTER LINKS */
+  .foot-panel2 {
+    display: none;
+  }
+
+  /* Only logo + copyright */
   .foot-panel3 {
     padding: 10px;
   }
 
   .foot-panel4 {
-    font-size: 12px;
+    font-size: 11px;
     padding: 10px;
   }
 }
