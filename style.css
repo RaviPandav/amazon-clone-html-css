@@ -23,8 +23,8 @@
   width: 100px;
 }
 
-.logo {
-  background-image: url('./img/logo.jpg'); /* Logo image path */
+.navbar .logo {
+  background-image: url('./img/logo.jpg');
   background-size: cover;
   height: 50px;
   width: 100px;
